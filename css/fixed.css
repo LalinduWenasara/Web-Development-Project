@@ -1,6 +1,6 @@
 /*--- Extra Bootstrap Column Padding --*/
 [class*="col-"] {
-  padding: 1rem;
+  padding: 16px;
 }
 
 /*--- Bootstrap Mobile Gutter Fix --*/
