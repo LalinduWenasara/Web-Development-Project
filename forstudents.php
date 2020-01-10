@@ -84,6 +84,13 @@ if (mysqli_num_rows($result) > 0)
     <p class="card-text"><?php
       echo $row["fdescription"]. "</td>"; ?></p>
   </div>
+  <div class="card-footer">
+                        <span class="float-right"><?php
+      echo  $row["favailability"]; ?></span>
+                        <span><i><?php 
+      echo  $row["price"]; ?> lkr</i>
+      </span>
+  </div>
   </div>
 </div>
 
