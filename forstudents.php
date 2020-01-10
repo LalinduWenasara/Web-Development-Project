@@ -2,7 +2,10 @@
 <html>
 <head>
 
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="css/sty1.css" rel="stylesheet" type="text/css" >
+<!-- bootstrap -->
+<link rel="stylesheet" href="bootstrap-4.1.3-dist/css/bootstrap.min.css">
 
 
 
@@ -48,8 +51,79 @@ if (!$con) {
   die("Connection failed: " . mysqli_connect_error());
 }
 ?>
+<div class="container">
 
 
+
+
+
+<?php
+$sql = "SELECT * FROM `foods`";
+$result = mysqli_query($con, $sql);
+?>
+
+<div class="container">
+<div class="row">
+
+
+ <?php
+if (mysqli_num_rows($result) > 0)
+ {
+  // output data of each row
+  while($row = mysqli_fetch_assoc($result))
+   {
+      ?>
+<div class="col-md-6 col-lg-3 d-flex align-items-stretch">
+<div class="card" style="width: 18rem; margin: 10px;">
+  <img class="card-img-top img-fluid" src="uploads/<?php echo $row['fimage']; ?>" alt="<?php echo $row['fimage']; ?>" id="imgcard">
+  <div class="card-body">
+  <h5 class="card-title">
+    <?php
+      echo $row["fname"]; ?>
+      </h5>
+    <p class="card-text"><?php
+      echo $row["fdescription"]. "</td>"; ?></p>
+  </div>
+  <div class="card-footer">
+                        <span class="float-right"><?php
+      echo  $row["favailability"]; ?></span>
+                        <span><i><?php 
+      echo  $row["price"]; ?> lkr</i>
+      </span>
+  </div>
+  </div>
+</div>
+
+
+
+      <?php
+   
+   } 
+      
+  }
+
+else
+ {
+  echo "0 results";
+}
+mysqli_close($con);
+?>
+
+    
+
+    </div>
+    </div>
+
+
+</div>
+
+<div>
+
+
+</div>
+
+
+<!--adds-->
 
 <table  class="table1">
 <tr>
@@ -76,62 +150,25 @@ if (!$con) {
 
 
 </td>
-<td>
-<?php
-$sql = "SELECT * FROM `foods`";
-$result = mysqli_query($con, $sql);
-?>
-
-<table >
-
- <?php
-if (mysqli_num_rows($result) > 0)
- {
-  // output data of each row
-  while($row = mysqli_fetch_assoc($result))
-   {
-      ?>
-      
-      <tr class="trclass1" id="zoom" >
-      <td class="menutd1" > 
-      <img src="uploads/<?php echo $row['fimage']; ?>"  class="img1">
-      </td >
-      <td class="td22">
-      <?php
-      echo $row["fname"]; ?>
-      </td>
-       <td class="td23" >  
-      <?php
-      echo $row["fdescription"]. "</td>"; ?>
-      <td class="td24"> 
-      <?php
-      echo  $row["favailability"]; ?>
-      </td> 
-      <td class="td25">
-      <?php
-      echo  $row["price"]. "lkr</td>";
-      }
-      echo "<tr ></br>";
-    
-      
-  }
-
-else
- {
-  echo "0 results";
-}
-mysqli_close($con);
-?>
-
-    </tr>
-
-    </table>
+</table>
 
 
-</div>
 
-<div>
-  <!--footer-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
 </div>
 
 
@@ -161,6 +198,12 @@ function carousel() {
 
 </script>
 
+ 
+<!-- bootstrap -->
+<script src="bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 
 
