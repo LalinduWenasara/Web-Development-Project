@@ -14,8 +14,7 @@ body{
     background: #73AD21;
     padding: 20px;
     width: 200px;
-    height: 150px; 
-     
+    height: 150px;  
    }
    .img1 {
       
@@ -192,7 +191,13 @@ th, td {
 
 
 
-
+#imgcard{
+  background-repeat:   no-repeat;
+  background-size:     cover;
+  text-align: center;
+  height: 150px;
+  object-fit: cover;
+}
 
 
 
