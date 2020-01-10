@@ -76,7 +76,7 @@ if (mysqli_num_rows($result) > 0)
 <div class="col-md-6 col-lg-3 d-flex align-items-stretch">
 <div class="card" style="width: 18rem; margin: 10px;">
   <img class="card-img-top img-fluid" src="uploads/<?php echo $row['fimage']; ?>" alt="<?php echo $row['fimage']; ?>" id="imgcard">
-  <div class="card-body">
+  <div class="card-body" id="cardbodyheight">
   <h5 class="card-title">
     <?php
       echo $row["fname"]; ?>
