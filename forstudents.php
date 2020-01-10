@@ -45,11 +45,13 @@
 <img src="images/unique1.jpg" class="topimg">
      <div class="di1" >
        </br>
+      
     <h1 class="h11">EDGE</h1>
       Our edge menu offers satisfying, gluten-free dinners for making low-carb lifestyles less complicated. Get started now.
                                                                                                           </br>
                                                                                                            </br>
     <h2 >Check out all our menus</h2>
+    <img src="img/logo.png" height="50px" width="100px">
                                                                                                            </br>
                                                                                                            </br>
     </div>
@@ -91,7 +93,7 @@ if (mysqli_num_rows($result) > 0)
    {
       ?>
 <div class="col-md-6 col-lg-3 d-flex align-items-stretch">
-<div class="card" style="width: 18rem; margin: 10px;">
+<div class="card" style="width: 18rem; margin: 10px;" id="zoom">
   <img class="card-img-top img-fluid" src="uploads/<?php echo $row['fimage']; ?>" alt="<?php echo $row['fimage']; ?>" id="imgcard">
   <div class="card-body" id="cardbodyheight">
   <h5 class="card-title">
