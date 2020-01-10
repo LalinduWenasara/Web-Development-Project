@@ -31,7 +31,8 @@
       <li><a href="#about">About</a></li>
       <li><a href="#login">login</a></li>
 				</li>
-			</ul>
+      </ul>
+      
 		</div>
 	</nav>
 	<!--- End Navigation--->
