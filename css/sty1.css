@@ -166,7 +166,7 @@ th, td {
 #zoom:hover {
   -ms-transform: scale(1.02); 
   -webkit-transform: scale(1.02); 
-  transform: scale(1);
+  transform: scale(1.2);
   background-color: rgb(196, 255, 194);
   border-color: lawngreen;
   box-shadow: lawngreen;
