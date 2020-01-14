@@ -13,6 +13,13 @@
 <link rel="stylesheet" href="css/fixed.css">
 <link href="fontawesome-free-5.12.0-web/css/all.css" rel="stylesheet">
 
+
+
+<!-- added styles from login page -->
+<title> login </title>
+    <link rel="stylesheet" href="Style_4.css">
+<link rel="stylesheet" href="css/Style_4.css">
+
     </head>
    
 <body>
@@ -31,6 +38,12 @@
   $db = mysqli_connect("$servername", "$susername","$spassword", "$sdbname");
 
 
+  if($db)
+  {
+    echo"db connected";
+  }
+
+
 
   error_reporting("0");
 
@@ -39,17 +52,18 @@
   
   
     //Get text
-    $uname= $_POST['name'];
+    $first_name= $_POST['first_name'];
+    $last_name= $_POST['last_name'];
     $email= $_POST['email'];
-
-  
+    $psw= $_POST['psw'];
+    $psw_repeat= $_POST['psw_repeat'];
     
   
-    
+    echo "$first_name";
     //insert query
   
     
-    $sql = "INSERT INTO logininfo(uname,email) values ('$uname','$email')";
+    $sql = "INSERT INTO logininfo(first_name,last_name,email,pwd) values ('$first_name','$last_name','$email','$psw')";
   
     
     //excute query
@@ -86,24 +100,14 @@
 
 
 
-
-
-  <html>
-<head>
-    <title> Transparent Login Form Design </title>
-    <link rel="stylesheet" href="Style_4.css">
-<link rel="stylesheet" href="css/Style_4.css">
-
-</head>
-    <body>
     <div class="login-box">
 
-        <form action="signup.php" method="POST" enctype="multipart/form-data">
+<form action="signup.php" method="POST">
 
 <div class="container">
 <div class="row">
 
-<input type="text" placeholder="Enter Your First Name" name=" first_name" required>
+<input type="text" placeholder="Enter Your First Name" name="first_name" required>
 
 <input type="text" placeholder="Enter Your Last Name" name="last_name" required>
 
@@ -113,7 +117,7 @@
 <input type="password" placeholder="Enter Your Password" name="psw" required>
 
 
-<input type="password" placeholder="Repeat Your Password" name="psw-repeat" required>
+<input type="password" placeholder="Repeat Your Password" name="psw_repeat" required>
 <hr>
 <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
 
