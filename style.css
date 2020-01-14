@@ -44,6 +44,7 @@ body{
 
 .home-inner{
   background-image: url(img/cover.png);
+  height: 100%;
 }
 .caption{
   width: 100%;
