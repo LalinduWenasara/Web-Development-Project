@@ -26,8 +26,6 @@
 
 
 
-
-
 <?php
 
   $servername="localhost";
@@ -38,32 +36,41 @@
   $db = mysqli_connect("$servername", "$susername","$spassword", "$sdbname");
 
 
-  if($db)
-  {
-    echo"db connected";
-  }
-
-
 
   error_reporting("0");
 
 	
   if(isset($_POST['submit'])){
   
-  
+
     //Get text
     $first_name= $_POST['first_name'];
     $last_name= $_POST['last_name'];
     $email= $_POST['email'];
-    $psw= $_POST['psw'];
-    $psw_repeat= $_POST['psw_repeat'];
+    $pwd= $_POST['pwd'];
+    $pwdcon= $_POST['pwdcon'];
+
+   if($pwdcon==$pwd){
+     $passw=$pwd;}
+   else{
+    echo"enter same password";
+   }
+
+
+
+
+
+
+
+  	
+  
     
   
-    echo "$first_name";
+    
     //insert query
   
     
-    $sql = "INSERT INTO logininfo(first_name,last_name,email,pwd) values ('$first_name','$last_name','$email','$psw')";
+    $sql = "INSERT INTO logininfo(first_name,last_name,email,pwd) values ('$first_name','$last_name','$email','$passw')";
   
     
     //excute query
@@ -72,19 +79,19 @@
     mysqli_query($db,$sql);
   
     
-    if($move)
+    if($sql)
   
     
     {
   
     
-      echo "Request Successful please log in";
+      echo "..";
   
     
     }else{
   
     
-      echo "Failed";
+      echo "...";
   
     
     }
@@ -102,34 +109,38 @@
 
     <div class="login-box">
 
-<form action="signup.php" method="POST">
 
 <div class="container">
 <div class="row">
-
-<input type="text" placeholder="Enter Your First Name" name="first_name" required>
-
-<input type="text" placeholder="Enter Your Last Name" name="last_name" required>
-
-<input type="email" placeholder="Enter Your Email" name="email" required>
+<div class="div2">
+        <form action="signup.php" method="POST" enctype="multipart/form-data">
 
 
-<input type="password" placeholder="Enter Your Password" name="psw" required>
 
 
-<input type="password" placeholder="Repeat Your Password" name="psw_repeat" required>
-<hr>
-<p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+     <input type="text" name="first_name" placeholder="Enter Your First Name">
+  
+   
+     <input type="text" name="last_name" placeholder="Enter Your Last Name">
+  
+    
+     <input class="mail" type="email" name="email" placeholder="Enter Your Email"> 
 
-<button type="submit" class="submitbtn">Sign up</button>
+    <input type="password" name="pwd"placeholder="Enter Your Password">
+
+    <input type="password" name="pwdcon"placeholder="Confirm Your Password">
+ 
+   
+<button type="submit" name="submit" class="submitbtn">Sign up</button>
 </div>
-
+<p>By creating an account you agree to our <a href="Login_Menu.html">Terms & Privacy</a>.</p>
 <div class="container signin">
-<p>Already have an account? <a href="#">Sign in</a>.</p>
+<p>Already have an account? <a href="Login_Menu.html">login</a>.</p>
 </div>
 </div>
 
-            </form>
+        </form>
+
         
         
         </div>
@@ -150,7 +161,25 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
     </body>
+
+  
+
 
   
 
