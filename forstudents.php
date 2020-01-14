@@ -7,6 +7,11 @@
 <!-- bootstrap -->
 <link rel="stylesheet" href="bootstrap-4.1.3-dist/css/bootstrap.min.css">
 
+<!-- added styles from home page -->
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/fixed.css">
+<link href="fontawesome-free-5.12.0-web/css/all.css" rel="stylesheet">
+
 
 
 </head>
@@ -14,11 +19,23 @@
 
 <div>
 <ul>
-  <li><a href="#about">About</a></li>
-  <li><a href="#login">login</a></li>
+ 
 </ul>
 </div>
-
+	<!---Navigation--->
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+		<a href="navbar-brand" href="#"><img src="img/logo.png" height="40px" width="100px">
+		</a>
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="navbar-nav ml-auto navbar-dark bg-dark">
+      <li><a href="#about">About</a></li>
+      <li><a href="#login">login</a></li>
+				</li>
+      </ul>
+      
+		</div>
+	</nav>
+	<!--- End Navigation--->
 
 
 
@@ -28,11 +45,13 @@
 <img src="images/unique1.jpg" class="topimg">
      <div class="di1" >
        </br>
+      
     <h1 class="h11">EDGE</h1>
       Our edge menu offers satisfying, gluten-free dinners for making low-carb lifestyles less complicated. Get started now.
                                                                                                           </br>
                                                                                                            </br>
     <h2 >Check out all our menus</h2>
+    <img src="img/logo.png" height="50px" width="100px">
                                                                                                            </br>
                                                                                                            </br>
     </div>
@@ -74,7 +93,7 @@ if (mysqli_num_rows($result) > 0)
    {
       ?>
 <div class="col-md-6 col-lg-3 d-flex align-items-stretch">
-<div class="card" style="width: 18rem; margin: 10px;">
+<div class="card" style="width: 18rem; margin: 10px;" id="zoom">
   <img class="card-img-top img-fluid" src="uploads/<?php echo $row['fimage']; ?>" alt="<?php echo $row['fimage']; ?>" id="imgcard">
   <div class="card-body" id="cardbodyheight">
   <h5 class="card-title">
@@ -166,10 +185,34 @@ mysqli_close($con);
 
 
 
-
-
   
 </div>
+
+
+
+
+
+<!--Start contact section-->
+<div id="contact" class="offset">
+	
+	<footer>
+		<div class="row justify-content-center">
+			
+			<div class="col-md-5 text-center">
+				<img src="img/logo.png" height="60" width="150">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. </p>
+				<strong>Contact Info</strong>
+				<p>(011) 244-5000 <br>theedge@gmail.com</p>
+				<a href="#" target="_blank"><i class="fab fa-twitter-square fa-2x"></i></a>
+				<a href="#" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a>
+				<a href="#" target="_blank"><i class="fab fa-youtube-square fa-2x"></i></a>
+			</div>
+	</footer>
+
+</div>
+<!--End contact section-->
+
 
 
 
