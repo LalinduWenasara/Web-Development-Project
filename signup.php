@@ -85,30 +85,56 @@
 
 
 
- <form action="signup.php" method="POST" enctype="multipart/form-data">
 
-     <div class="container">
 
-    <input type="text" placeholder="Enter Your First Name" name=" first_name" required>
 
-    <input type="text" placeholder="Enter Your Last Name" name="last_name" required>
+  <html>
+<head>
+    <title> Transparent Login Form Design </title>
+    <link rel="stylesheet" href="Style_4.css">
+<link rel="stylesheet" href="css/Style_4.css">
 
-    <input type="email" placeholder="Enter Email" name="email" required>
+</head>
+    <body>
+    <div class="login-box">
 
+        <form action="signup.php" method="POST" enctype="multipart/form-data">
+
+<div class="container">
+<div class="row">
+
+<input type="text" placeholder="Enter Your First Name" name=" first_name" required>
+
+<input type="text" placeholder="Enter Your Last Name" name="last_name" required>
+
+<input type="email" placeholder="Enter Your Email" name="email" required>
+
+
+<input type="password" placeholder="Enter Your Password" name="psw" required>
+
+
+<input type="password" placeholder="Repeat Your Password" name="psw-repeat" required>
+<hr>
+<p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+<button type="submit" class="submitbtn">Sign up</button>
+</div>
+
+<div class="container signin">
+<p>Already have an account? <a href="#">Sign in</a>.</p>
+</div>
+</div>
+
+            </form>
+        
+        
+        </div>
     
-    <input type="password" placeholder="Enter Password" name="psw" required>
+    </body>
+</html>
 
 
-    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-    <hr>
-    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
 
-    <button type="submit" class="submitbtn">Sign up</button>
-  </div>
-  
-  <div class="container signin">
-    <p>Already have an account? <a href="#">Sign in</a>.</p>
-  </div>
 </form>
 
 
