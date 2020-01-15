@@ -55,7 +55,8 @@
    else{
     echo"enter same password";
    }
-
+   
+   $passw=md5($passw);
 
 
 
@@ -85,13 +86,13 @@
     {
   
     
-      echo "..";
+      echo "connected";
   
     
     }else{
   
     
-      echo "...";
+      echo "error";
   
     
     }
