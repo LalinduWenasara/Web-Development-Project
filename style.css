@@ -125,10 +125,10 @@ h3.heading{
 .row.no-padding [class*=col-]{
   padding: 0;
 }
+
 .menu img:hover{
   transform: scale(1.1);
 }
-
 
 
 
