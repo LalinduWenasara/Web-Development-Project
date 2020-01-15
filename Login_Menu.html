@@ -6,6 +6,57 @@
 
 </head>
     <body>
+
+  <?php
+        $servername="localhost";
+        $susername="root";
+        $spassword="";
+        $sdbname="nsbmedge";
+      // Create connection
+      $con = mysqli_connect("$servername", "$susername","$spassword", "$sdbname");
+      // Check connection
+      if (!$con) {
+        die("Connection failed: " . mysqli_connect_error());
+      }
+      
+
+      $sql = "SELECT * FROM `logininfo`";
+      $result = mysqli_query($con, $sql);
+     
+
+      if (mysqli_num_rows($result) > 0)
+       {
+        // output data of each row
+        while($row = mysqli_fetch_assoc($result))
+         {
+            
+            if($row[""]==$row[""] && $row[""]==$row[""] )
+        
+             ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <div class="login-box">
     <img src="avatar.png" class="avatar">
         <h1>Login Here</h1>
