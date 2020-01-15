@@ -7,6 +7,7 @@
     <title> Admin Login Panel </title>
     <link rel="stylesheet" href="Style_3.css">
 <link rel="stylesheet" href="css/Style_3.css">
+<link rel="shortcut icon" href="img/icon.png" />
 
 </head>
     <body>
@@ -72,7 +73,10 @@
             <p>Password</p>
             <input type="password" name="password1" placeholder="Enter Your Password">
             <input type="submit" name="submit" value="Login">
-            <a href="#">Forget Password</a>    
+            <div class="row">
+            <a href="#">Forget Password </a>
+            <a href="signup.php"> &nbsp; &nbsp; &nbsp;signup</a>
+            </div>   
             </form>
         
         
