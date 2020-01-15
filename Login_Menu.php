@@ -1,3 +1,7 @@
+ 
+ <?php session_start()
+?>
+ 
  <html>
 <head>
     <title> Admin Login Panel </title>
@@ -37,8 +41,9 @@
                 if(mysqli_num_rows($result) > 0)  
                 {  
                     
-                     $_SESSION['username1'] = $username1;
-                     header("Location:upload.php");  
+                     $_SESSION['username1'] = "$username1";
+                     
+                    header("Location:upload.php");  
                       
                 }  
                 else  

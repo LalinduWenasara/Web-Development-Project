@@ -1,6 +1,9 @@
+<?php session_start()
+?>
+
+
 <html>
     <head>
-
 
 <link href="css/sty2.css" rel="stylesheet" type="text/css" >
 
@@ -11,10 +14,13 @@
 
 
 <ul>
-  <li><a href="#about">About</a></li>
-  <li><a href="#login">login</a></li>
+ 
+<li><a href="logout.php">Logout</a></li>
+
+  <li><a href="#about">  <?php echo ' '.$_SESSION["username1"].''; ?></a></li>
+ 
 </ul>
-</div>
+
 
 <div class="all">
 
