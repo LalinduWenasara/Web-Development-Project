@@ -12,6 +12,7 @@
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="css/fixed.css">
 <link href="fontawesome-free-5.12.0-web/css/all.css" rel="stylesheet">
+<link rel="shortcut icon" href="img/icon.png" />
 
 
 
@@ -116,9 +117,7 @@
 <div class="row">
 <div class="div2">
         <form action="signup.php" method="POST" enctype="multipart/form-data">
-
-
-
+        <h1>Sign up</h1>
 
      <input type="text" name="first_name" placeholder="Enter Your First Name">
   

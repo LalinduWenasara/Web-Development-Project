@@ -7,6 +7,7 @@
     <title> Admin Login Panel </title>
     <link rel="stylesheet" href="Style_3.css">
 <link rel="stylesheet" href="css/Style_3.css">
+<link rel="shortcut icon" href="img/icon.png" />
 
 </head>
     <body>
