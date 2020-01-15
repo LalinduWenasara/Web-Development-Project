@@ -53,7 +53,8 @@
    if($pwdcon==$pwd){
      $passw=$pwd;}
    else{
-    echo"enter same password";
+
+    echo '<script>alert("enter same password")</script>';  
    }
    
    $passw=md5($passw);
@@ -134,9 +135,9 @@
    
 <button type="submit" name="submit" class="submitbtn">Sign up</button>
 </div>
-<p>By creating an account you agree to our <a href="Login_Menu.html">Terms & Privacy</a>.</p>
+<p>By creating an account you agree to our <a href="Login_Menu.php">Terms & Privacy</a>.</p>
 <div class="container signin">
-<p>Already have an account? <a href="Login_Menu.html">login</a>.</p>
+<p>Already have an account? <a href="Login_Menu.php">login</a>.</p>
 </div>
 </div>
 

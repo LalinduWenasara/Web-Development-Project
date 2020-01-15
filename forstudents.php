@@ -20,12 +20,12 @@
 
 	<!---Navigation--->
 	<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-		<a href="navbar-brand" href="#"><img src="img/logo.png" height="40px" width="100px">
-		</a>
+
+		
 		<div class="collapse navbar-collapse" id="navbarResponsive">
 			<ul class="navbar-nav ml-auto navbar-dark bg-dark">
-      <li><a href="#about">About</a></li>
-      <li><a href="#login">login</a></li>
+      <li><a href="navbar-brand" href="#"><img src="img/logo.png" height="30px" width="70px"></a></li>
+
 				</li>
       </ul>
       
