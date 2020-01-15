@@ -1,11 +1,10 @@
+<?php session_start()
+?>
+
+
 <html>
     <head>
-    <?php   session_start();  
- if(isset($_SESSION["username1"]))  
- {  
-  $username1=$_SESSION["username1"];
- }  
-?>
+
 <link href="css/sty2.css" rel="stylesheet" type="text/css" >
 
     </head>
@@ -17,7 +16,8 @@
 <ul>
  
 <li><a href="logout.php">Logout</a></li>
-  <li><a href="#about"><?php  echo ' '.$username1.'';  ?></a></li>
+
+  <li><a href="#about">  <?php echo ' '.$_SESSION["username1"].''; ?></a></li>
  
 </ul>
 
