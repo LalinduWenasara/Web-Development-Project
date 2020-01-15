@@ -19,7 +19,10 @@
         die("Connection failed: " . mysqli_connect_error());
       }
       
+      if(isset($_POST["username1"])){
 
+
+      
            if(!($_POST["username1"]) || !($_POST["password1"]))  
            {  
                 echo '<script>alert("Both Fields are required")</script>';  
@@ -34,8 +37,9 @@
                 if(mysqli_num_rows($result) > 0)  
                 {  
                     
-                     $_SESSION['username1'] = $username1;  
-                     header("upload.php");  
+                     $_SESSION['username1'] = $username1;
+                     header("Location:upload.php");  
+                      
                 }  
                 else  
                 {  
@@ -43,6 +47,9 @@
                 }  
            }  
     
+
+
+          }
       ?>  
 
 
