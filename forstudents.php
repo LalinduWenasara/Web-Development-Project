@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="css/fixed.css">
 <link href="fontawesome-free-5.12.0-web/css/all.css" rel="stylesheet">
-
+<link rel="shortcut icon" href="img/icon.png" />
 
 
 </head>
@@ -24,7 +24,7 @@
 		
 		<div class="collapse navbar-collapse" id="navbarResponsive">
 			<ul class="navbar-nav ml-auto navbar-dark bg-dark">
-      <li><a href="navbar-brand" href="#"><img src="img/logo.png" height="30px" width="70px"></a></li>
+      <li><a  href="index.html"><img src="img/logo.png" height="30px" width="70px"></a></li>
 
 				</li>
       </ul>
@@ -186,8 +186,6 @@ mysqli_close($con);
 
 
 
-
-
 <!--Start contact section-->
 <div id="contact" class="offset">
 	
@@ -195,20 +193,18 @@ mysqli_close($con);
 		<div class="row justify-content-center">
 			
 			<div class="col-md-5 text-center">
-				<img src="img/logo.png" height="60" width="150">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. </p>
+				<img src="img/logo2.png" height="60" width="150">
+				<p>TRADITIONAL SRI LANKAN FOODS   |   PASTRY AND BAKERY FOOD ITEMS   |   BURGERS   |   HEALTHY FOODS   |   JUICE BAR</p>
 				<strong>Contact Info</strong>
 				<p>(011) 244-5000 <br>theedge@gmail.com</p>
 				<a href="#" target="_blank"><i class="fab fa-twitter-square fa-2x"></i></a>
 				<a href="#" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a>
 				<a href="#" target="_blank"><i class="fab fa-youtube-square fa-2x"></i></a>
-			</div>
+		
 	</footer>
 
 </div>
 <!--End contact section-->
-
 
 
 
