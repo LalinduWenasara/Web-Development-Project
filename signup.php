@@ -17,7 +17,7 @@
 
 
 <!-- added styles from login page -->
-<title> login </title>
+<title> Sign up</title>
     <link rel="stylesheet" href="Style_4.css">
 <link rel="stylesheet" href="css/Style_4.css">
 
