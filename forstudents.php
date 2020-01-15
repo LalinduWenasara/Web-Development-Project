@@ -17,11 +17,7 @@
 </head>
 <body>
 
-<div>
-<ul>
- 
-</ul>
-</div>
+
 	<!---Navigation--->
 	<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
 		<a href="navbar-brand" href="#"><img src="img/logo.png" height="40px" width="100px">
