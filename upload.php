@@ -1,8 +1,24 @@
+<?php session_start()
+?>
+
+
 <html>
     <head>
 
-
 <link href="css/sty2.css" rel="stylesheet" type="text/css" >
+<link rel="shortcut icon" href="img/icon.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="css/sty5.css" rel="stylesheet" type="text/css" >
+<!-- bootstrap -->
+<link rel="stylesheet" href="bootstrap-4.1.3-dist/css/bootstrap.min.css">
+
+<!-- added styles from home page -->
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/fixed.css">
+<link href="fontawesome-free-5.12.0-web/css/all.css" rel="stylesheet">
+
+
+
 
     </head>
    
@@ -11,10 +27,13 @@
 
 
 <ul>
-  <li><a href="#about">About</a></li>
-  <li><a href="#login">login</a></li>
+ 
+<li><a href="logout.php">Logout</a></li>
+
+  <li><a href="#about">  <?php echo ' '.$_SESSION["username1"].''; ?></a></li>
+ 
 </ul>
-</div>
+
 
 <div class="all">
 
@@ -139,6 +158,43 @@
 
         </form>
   </div>
+
+
+
+
+
+
+
+
+<!--Start contact section-->
+<div id="contact" class="offset">
+	
+	<footer>
+		<div class="row justify-content-center">
+			
+			<div class="col-md-5 text-center">
+				<img src="img/logo2.png" height="60" width="150">
+				<p>TRADITIONAL SRI LANKAN FOODS   |   PASTRY AND BAKERY FOOD ITEMS   |   BURGERS   |   HEALTHY FOODS   |   JUICE BAR</p>
+				<strong>Contact Info</strong>
+				<p>(011) 244-5000 <br>theedge@gmail.com</p>
+				<a href="#" target="_blank"><i class="fab fa-twitter-square fa-2x"></i></a>
+				<a href="#" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a>
+				<a href="#" target="_blank"><i class="fab fa-youtube-square fa-2x"></i></a>
+	
+	</footer>
+
+</div>
+<!--End contact section-->
+
+
+
+
+
+
+
+
+
+
 
 
 
