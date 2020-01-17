@@ -54,6 +54,24 @@
 
 
 
+   
+
+
+
+
+
+
+    <div class="menui">
+    <i><img src="img/shop3.png" width="100px" height="100px"></i>
+					<h4>HELA BOJUN</h4>
+					<p >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          </p>
+          
+				</div>
+ 
+
+
 <?php
   $servername="localhost";
   $susername="root";
@@ -73,7 +91,7 @@ if (!$con) {
 
 
 <?php
-$sql = "SELECT * FROM `foods`";
+$sql = "SELECT * FROM `foods` WHERE (`shop`='HELABOJUN')";
 $result = mysqli_query($con, $sql);
 ?>
 
@@ -136,6 +154,257 @@ mysqli_close($con);
 
 
 </div>
+
+
+
+
+
+<div class="containermain">
+
+
+
+
+
+
+  
+
+    <div class="menui">
+
+    <i><img src="img/shop3.png" width="60px" height="60px"></i>
+					<h3 class="h11" >NATURA</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          </p>
+    
+				</div>
+
+
+
+
+
+
+
+
+
+<?php
+  $servername="localhost";
+  $susername="root";
+  $spassword="";
+  $sdbname="nsbmedge";
+// Create connection
+$con = mysqli_connect("$servername", "$susername","$spassword", "$sdbname");
+// Check connection
+if (!$con) {
+  die("Connection failed: " . mysqli_connect_error());
+}
+?>
+<div class="container">
+
+
+
+
+
+<?php
+$sql = "SELECT * FROM `foods` WHERE (`shop`='NATURA')";
+$result = mysqli_query($con, $sql);
+?>
+
+<div class="container">
+<div class="row">
+
+
+ <?php
+if (mysqli_num_rows($result) > 0)
+ {
+  // output data of each row
+  while($row = mysqli_fetch_assoc($result))
+   {
+      ?>
+<div class="col-md-6 col-lg-3 d-flex align-items-stretch">
+<div class="card" style="width: 18rem; margin: 10px;" id="zoom">
+  <img class="card-img-top img-fluid" src="uploads/<?php echo $row['fimage']; ?>" alt="<?php echo $row['fimage']; ?>" id="imgcard">
+  <div class="card-body" id="cardbodyheight">
+  <h5 class="card-title">
+    <?php
+      echo $row["fname"]; ?>
+      </h5>
+    <p class="card-text"><?php
+      echo $row["fdescription"]. "</td>"; ?></p>
+  </div>
+  <div class="card-footer">
+                        <span class="float-right"><?php
+      echo  $row["favailability"]; ?></span>
+                        <span><i><?php 
+      echo  $row["price"]; ?> lkr</i>
+      </span>
+  </div>
+  </div>
+</div>
+
+
+
+      <?php
+   
+   } 
+      
+  }
+
+else
+ {
+  echo "0 results";
+}
+mysqli_close($con);
+?>
+
+    
+
+    </div>
+    </div>
+
+
+</div>
+
+<div>
+
+
+</div>
+
+
+
+
+
+<div class="containermain">
+
+
+
+
+    <div class="menui">
+          <i class="fas fa-hamburger fa-3x"></i>
+					<h4>NANGU</h4>
+					<p >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					</p>
+				</div>
+
+
+
+
+
+
+
+
+
+<?php
+  $servername="localhost";
+  $susername="root";
+  $spassword="";
+  $sdbname="nsbmedge";
+// Create connection
+$con = mysqli_connect("$servername", "$susername","$spassword", "$sdbname");
+// Check connection
+if (!$con) {
+  die("Connection failed: " . mysqli_connect_error());
+}
+?>
+<div class="container">
+
+
+
+
+
+<?php
+$sql = "SELECT * FROM `foods` WHERE (`shop`='NANGU')";
+$result = mysqli_query($con, $sql);
+?>
+
+<div class="container">
+<div class="row">
+
+
+ <?php
+if (mysqli_num_rows($result) > 0)
+ {
+  // output data of each row
+  while($row = mysqli_fetch_assoc($result))
+   {
+      ?>
+<div class="col-md-6 col-lg-3 d-flex align-items-stretch">
+<div class="card" style="width: 18rem; margin: 10px;" id="zoom">
+  <img class="card-img-top img-fluid" src="uploads/<?php echo $row['fimage']; ?>" alt="<?php echo $row['fimage']; ?>" id="imgcard">
+  <div class="card-body" id="cardbodyheight">
+  <h5 class="card-title">
+    <?php
+      echo $row["fname"]; ?>
+      </h5>
+    <p class="card-text"><?php
+      echo $row["fdescription"]. "</td>"; ?></p>
+  </div>
+  <div class="card-footer">
+                        <span class="float-right"><?php
+      echo  $row["favailability"]; ?></span>
+                        <span><i><?php 
+      echo  $row["price"]; ?> lkr</i>
+      </span>
+  </div>
+  </div>
+</div>
+
+
+
+      <?php
+   
+   } 
+      
+  }
+
+else
+ {
+  echo "0 results";
+}
+mysqli_close($con);
+?>
+
+    
+
+    </div>
+    </div>
+
+
+</div>
+
+<div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <!--adds-->
