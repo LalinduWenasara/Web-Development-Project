@@ -62,6 +62,7 @@
     $price= $_POST['price'];
     $checkbox1=$_POST['time'];
     $time=implode(",", $checkbox1);
+    $shop= $_POST['shop'];
   //image file directory
   
     $move=move_uploaded_file($_FILES["image"]["tmp_name"],"uploads/". $_FILES["image"]["name"]);			
@@ -72,7 +73,7 @@
     //insert query
   
     
-    $sql = "INSERT INTO foods(fimage,fname,fdescription,favailability,price) values ('$image','$fname','$fdescription','$time','$price')";
+    $sql = "INSERT INTO foods(fimage,fname,fdescription,favailability,price,shop) values ('$image','$fname','$fdescription','$time','$price','$shop')";
   
     
     //excute query
@@ -121,7 +122,14 @@
   <tr>  
      <td>name</td>  
      <td><input type="text" name="fname"></td>  
-  </tr>  
+  </tr> 
+  <tr>  
+   <td>select your shop:</td>
+   <td>  <input type="radio" name="shop" value="NANGU">nangu
+  <input type="radio" name="shop" value="NATURA">natura
+  <input type="radio" name="shop" value="HELABOJUN">hela bojun</td>  
+  
+   </tr>   
   <tr>  
      <td>price</td>  
      <td><input type="text" name="price"></td>  
@@ -149,6 +157,8 @@
       <td>dinner</td>  
       <td><input type="checkbox" name="time[]" value="dinner"></td>  
    </tr>  
+ 
+
 
       <td colspan="2" align="center">
 
