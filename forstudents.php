@@ -47,29 +47,29 @@
                                                                                                           </br>
                                                                                                            </br>
     <h2 >Check out all our menus</h2>
-    <img src="img/logo.png" height="50px" width="100px">
+    
                                                                                                            </br>
                                                                                                            </br>
     </div>
 
 
 
-   
+
+
+  <div class="jumbotron jumbotron-fluid">
+  <div class="container">
+  <div class="row">
+  <img src="img/shop3.png" width="60px" height="60px">
+    <h1 class="display-6">HELA BOJUN</h1>
+  </div>
+  
+    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  </div>
+</div>
 
 
 
 
-
-
-    <div class="menui">
-    <i><img src="img/shop3.png" width="100px" height="100px"></i>
-					<h4>HELA BOJUN</h4>
-					<p >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          </p>
-          
-				</div>
- 
 
 
 <?php
@@ -167,16 +167,19 @@ mysqli_close($con);
 
 
   
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+  <div class="row">
+  <img src="img/shop3.png" width="60px" height="60px">
+    <h1 class="display-6">NATURA</h1>
+  </div>
+  
+    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+  </div>
+</div>
 
-    <div class="menui">
-
-    <i><img src="img/shop3.png" width="60px" height="60px"></i>
-					<h3 class="h11" >NATURA</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          </p>
-    
-				</div>
+ 
 
 
 
@@ -278,13 +281,21 @@ mysqli_close($con);
 
 
 
-    <div class="menui">
-          <i class="fas fa-hamburger fa-3x"></i>
-					<h4>NANGU</h4>
-					<p >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					</p>
-				</div>
+
+  
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+  <div class="row">
+  <i class="fas fa-hamburger fa-3x"></i>
+    <h1 class="display-6">NANGU</h1>
+  </div>
+  
+    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+  </div>
+</div>
+
+
 
 
 
