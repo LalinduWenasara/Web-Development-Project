@@ -287,8 +287,8 @@ mysqli_close($con);
 <div class="jumbotron jumbotron-fluid">
   <div class="container">
   <div class="row">
-  <i class="fas fa-hamburger fa-3x"></i>
-    <h1 class="display-6">NANGU</h1>
+  <img src="img/shop2.png" width="60px" height="60px">
+    <h1 class="display-6">NUNGU</h1>
   </div>
   
     <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
