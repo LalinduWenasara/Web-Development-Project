@@ -63,8 +63,8 @@
     <h1 class="display-6">HELA BOJUN</h1>
   </div>
   
-    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+    <p class="lead">හෙල බොජුන් is a shop which is based our Traditional Sri Lankan Food such as rich and curry , milk rice,
+            sri lankan traditional sweets etc.</p>
   </div>
 </div>
 
@@ -175,8 +175,8 @@ mysqli_close($con);
     <h1 class="display-6">NATURA</h1>
   </div>
   
-    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+    <p class="lead">Natura is a Short Eats shop that you can fulfil your instant food needs such as fish rolls
+            ,egg buns,fish burgers etc. And also you can find refreshments such as cool drinks and ice-creams.</p>
   </div>
 </div>
 
@@ -291,8 +291,8 @@ mysqli_close($con);
     <h1 class="display-6">NANGU</h1>
   </div>
   
-    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+    <p class="lead">Lungu is Indian based shop where you can feel the taste of some prominent Indian Food
+            Such as Poori,Thosai and Nan Rotti.</p>
   </div>
 </div>
 
