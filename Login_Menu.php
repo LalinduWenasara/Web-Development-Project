@@ -64,7 +64,7 @@
 
 
 
-    <div class="login-box">
+    <div class="login-box" style="margin-left: 333px">
     <img src="avatar.png" class="avatar">
         <h1>Login Here</h1>
             <form action="Login_Menu.php" method="POST" enctype="multipart/form-data">
