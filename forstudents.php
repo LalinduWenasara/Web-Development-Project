@@ -430,13 +430,13 @@ mysqli_close($con);
 
 
 
-<div  style="max-width:500px">
+<div>
 
    
-   <img class="mySlides" src="images/unique3.jpg" style="width:100%" >
-   <img class="mySlides" src="images/unique4.jpg" style="width:100%">
-   <img class="mySlides" src="images/unique5.jpg" style="width:100%" >
-   <img class="mySlides" src="images/unique6.jpg" style="width:100%" >
+   <img class="mySlides" src="images/unique3.png" style="width:100%" >
+   <img class="mySlides" src="images/unique4.png" style="width:100%">
+   <img class="mySlides" src="images/unique5.png" style="width:100%" >
+  
      
        
 
