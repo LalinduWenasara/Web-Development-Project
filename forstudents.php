@@ -420,7 +420,7 @@ mysqli_close($con);
 
 
 <!--adds-->
-
+<!--
 <table  class="table1">
 <tr>
 
@@ -433,9 +433,9 @@ mysqli_close($con);
 <div>
 
    
-   <img class="mySlides" src="images/unique3.png" style="width:100%" >
-   <img class="mySlides" src="images/unique4.png" style="width:100%">
-   <img class="mySlides" src="images/unique5.png" style="width:100%" >
+   <img class="mySlides" src="images/unique3.png" style="width:720px" height="300px">
+   <img class="mySlides" src="images/unique4.png" style="width:720px" height="300px">
+   <img class="mySlides" src="images/unique5.png" style="width:720px" height="300px">
   
      
        
@@ -448,7 +448,7 @@ mysqli_close($con);
 </td>
 </table>
 
-
+-->
 
 
 
@@ -493,7 +493,7 @@ mysqli_close($con);
 
 
 
-
+<!--
 
 <script>
 
@@ -513,7 +513,7 @@ function carousel() {
 }
 
 </script>
-
+-->
  
 <!-- bootstrap -->
 <script src="bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
