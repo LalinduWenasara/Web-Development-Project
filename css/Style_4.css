@@ -16,15 +16,15 @@ body{
     background: rgba(0, 0, 0, 0.5);
     color: #fff;
     top: 50%;
-    left: 50%;
+    left: 75%;
     position: absolute;
     transform: translate(-50%,-50%);
     box-sizing: border-box;
     padding: 70px 30px;
 }
 .avatar{
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     position: absolute;
     top: -50px;
