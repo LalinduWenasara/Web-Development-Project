@@ -430,13 +430,20 @@ mysqli_close($con);
 
 
 
-<div>
+<div  style="max-width:500px">
 
    
+<<<<<<< HEAD
    <img class="mySlides" src="images/unique3.png" style="width:720px" height="300px">
    <img class="mySlides" src="images/unique4.png" style="width:720px" height="300px">
    <img class="mySlides" src="images/unique5.png" style="width:720px" height="300px">
   
+=======
+   <img class="mySlides" src="images/unique3.jpg" style="width:100%" >
+   <img class="mySlides" src="images/unique4.jpg" style="width:100%">
+   <img class="mySlides" src="images/unique5.jpg" style="width:100%" >
+   <img class="mySlides" src="images/unique6.jpg" style="width:100%" >
+>>>>>>> parent of 0435731... Merge pull request #24 from sdgamage1998/Update22
      
        
 
